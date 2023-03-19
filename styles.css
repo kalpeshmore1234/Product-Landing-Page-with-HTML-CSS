@@ -200,6 +200,8 @@ body{
 #how-it-looks{
     display: flex;
     justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 @media screen and (max-width:1164px){
