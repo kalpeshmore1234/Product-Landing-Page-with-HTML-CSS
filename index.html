@@ -1,147 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Python Documentation</title>
-    <link rel = "stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-cakes product landing page</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <nav id="navbar">
-        <header>Python Documentation</header>
-        <ul>
-            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-            <li><a class="nav-link" href="#Variables">Variables</a></li>
-            <li><a class="nav-link" href="#Data_types">Data types</a></li>
-            <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
-        </ul>
+    <div id="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="K-cakes logo" id="header-img" height="90rem">
+            </div>
 
-    </nav>
-
-
-    <main id="main-doc">
-        <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <article>
-                <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
-
-                <p>The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python web site, <a href="https://www.python.org">https://www.python.org</a> , and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.</p>
-
-                <p>The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.</p>
-            </article>
-        </section>
-
-        <section class="main-section" id="Hello_world">
-            <header>Hello world</header>
-            <article>
-                To get started with writing Python, open the IDE and write
-                your first "Hello world" Python code:
-                <code>print("Hello world")</code>
-                output:
-                <code> Hello world</code>
-                see the Hello world in your output.
-            </article>
-
-        </section>
-
-        <section class="main-section" id="Variables">
-            <header>Variables</header>
-            <article>
-
-            <p>Variables are containers for storing data values.</p>
-            <p>Python has no command for declaring a variable.</p>
-            <p>A variable is created the moment you first assign a value to it.</p>
-            <code>x=5
-                y="John"
-                print(x)
-                print(y)
-            </code>output:
-            <code>5
-                John
-            </code>
-
-
-            <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
-            <code> x = 4 # x is of type int
-                x = "Sally" # x is now of type str
-            </code>
-            </article>
-        </section>
-
-        <section class="main-section" id="Data_types">
-            <header>Data types</header>
-            <article>
-                <p>Python has the following data types built-in by default, in these categories:</p>
-                <ul>
-                    <li>Text type: str</li>
-                    <li>Numeric types: int, float, complex</li>
-                    <li>Sequence types: list, tuple, range</li>
-                    <li>Mapping type: dict</li>
-                    <li>Set types: set, frozenset</li>
-                    <li>Boolean type: bool</li>
-                    <li>Binary types: bytes, bytearray, memoryview</li>
-                    <li>None type: NoneType</li>
+            <nav id="nav-bar">
+                <ul class="ul-nav">
+                  <li class="h-link"><a class="nav-link" href="#features">Features</a></li>
+                  <li class="h-link"><a class="nav-link" href="#how-it-looks">How It Looks</a></li>
+                  <li class="h-link"><a class="nav-link" href="#pricing">Pricing</a></li>
                 </ul>
-            </article>
-        </section>
+              </nav>
+        </header>
 
-        <section class="main-section" id="if...else_statement">
-            <header>if...else statement</header>
-            <article>
-                <p>In computer programming, we use the if statement to run a block code only when a certain condition is met.</p>
-                <p>In Python there are three forms of the if...else statement</p>
-                <ol>
-                    <li>if statement</li>
-                    <li>if else statement</li>
-                    <li>if elif else statement</li>
-                </ol>
-                <p id = "ifl">1.Python if statement</p>
-                <code> number = 10
-                    # check if number is greater than 0
-                    if number > 0:
-                        print('Number is positive.')
+        <section id="hero">
+            <h2 id="heading">Handmade, Delicious <div id="line-break">Cakes</div></h2>
+            
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <input
+                name="email"
+                id="email"
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+              <br>
+              <input id="submit" type="submit" value="Get Started" class="btn" />
+            </form>
+          </section>
 
-                    print('The if statement is easy')
-                </code>output:
-                <code>Number is positive
-                    The if statement is easy
-                </code>
 
-                <p id="ifl">2.Python if...else statement</p>
-                <code>number = 10
+          <div class="container">
+            <section id="features">
+              <div class="feature1">
+                <div class="about">
+                  <h2 class="head">Taste</h2>
+                  <p id="para">You know why everyone loves cakes? Obviously because of the taste. One of the very basic yet important features of any cake is its taste. How the cake tastes and what you feel after having a single bite defines the whole existence of the cake. K-Cakes are enriched in taste and should satisfy you completely.</p>
+                </div>
+              </div>
 
-                    if number > 0:
-                        print('Positive number')
+              <div class="feature2">
+                <div class="about">
+                  <h2 class="head">Baking</h2>
+                  <p id="para">K-cakes are the cakes that are baked with proper steps. our cakes are fluffy, spongy, and moist. Having fewer ingredients and proper baking methods make the cake more appealing. we use quality ingredients.</p>
+              </div>
+              </div>
 
-                    else:
-                        print('Negative number')
 
-                    print('This statement is always executed')
-                </code>output:
-                <code>Positive number
-                    This statement is always executed
-                </code>
+              <div class="feature3">
+                <div class="about">
+                  <h2 class="head">Flavours</h2>
+                  <p id="para">The most necessary feature of any cake is its flavour. People are choosy, and cakes are made for everybody. We provide chocolate, vanilla, butterscotch, strawberry, and many more flavours that are added to serve every taste.</p>
+              </div>
+              </div>
 
-                <p id="ifl">3.Python if...elif...else statement</p>
-                <code>number = 0
+            </section>
 
-                    if number > 0:
-                        print("Positive number")
-                        
-                    elif number == 0:
-                        print('Zero')
+            <section id="how-it-looks">
+              <iframe height="315" width="490" src="https://www.youtube.com/embed/J7bjH5IdMjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" id="video"></iframe>
+            </section>
 
-                    else:
-                        print('Negative number')
+            
+            <section id="pricing">
+              <div class="product" id="Coffee_Cake">
+                <div class="name">Coffee Cake</div>
+                <div class="image"><img src="images/coffee-cake.jpg" alt="coffee-cake" class="c-imgs" width="400"/></div>
+                <h2 class="price">Rs.500</h2>
+              </div>
+               
+              <div class="product">
+                <div class="name" id="Banana_Cake">Banana Cake</div>
+                <div class="image"><img src="images/banana-cake.jpg" alt="banana-cake" class="c-imgs" width="400"/></div>
+                <h2 class="price">Rs.250</h2>
+              </div>
+              
+              <div class="product">
+                <div class="name" id="Funfetti_cake">Funfetti cake</div>
+                <div class="image"><img src="images/funfettie-cake.jpg" alt="funfetti-cake" class="c-imgs" width="400"/></div>
+                <h2 class="price" id="f-cakeP">Rs.2000</h2>
+              </div>
+            </section>
 
-                    print('This statement is always executed')
-                </code>output:
-                <code>Zero
-                    This statement is always executed
-                </code>
-            </article>
-        </section>
-
-    </main>
+            <footer>
+              <ul class="f-ul">
+                <li class="f-l"><a href="#" class="f-a">Privacy</a></li>
+                <li class="f-l"><a href="#" class="f-a">Terms</a></li>
+                <li class="f-l"><a href="#" class="f-a">Contact</a></li>
+              </ul>
+              
+              <div id="cop">Copyright 2023, K-cakes</div>
+            </footer>
+          </div>
     
+    </div>
 </body>
 </html>
