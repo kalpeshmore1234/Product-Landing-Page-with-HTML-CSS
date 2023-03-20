@@ -190,7 +190,8 @@ body{
 }
 
 #heading{
-  color:black
+  color:black;
+  place-items: center;
 }
 
 .head{
