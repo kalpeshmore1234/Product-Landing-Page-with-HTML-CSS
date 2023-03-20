@@ -135,7 +135,7 @@ body{
   }
 }
 
-@media screen and (max-width:520px){
+@media screen and (max-width:550px){
   #line-break{
     display: flex;
     justify-content: center;
@@ -146,7 +146,7 @@ body{
   }
 }
 
-@media screen and (max-width:403px){
+@media screen and (max-width:450px){
   #hero{
     font-size: 1.4em;
     margin-top:4em;
@@ -159,7 +159,7 @@ body{
   }
 }
 
-@media screen and (max-width:325px){
+@media screen and (max-width:340px){
   #hero{
     font-size: 1.1em;
     margin-top: 5em;
